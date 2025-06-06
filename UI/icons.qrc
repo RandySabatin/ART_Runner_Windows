@@ -1,0 +1,18 @@
+<RCC>
+  <qresource>
+    <file>ico/Agent.ico</file>
+    <file>ico/BestPractice.ico</file>
+    <file>ico/CheckedFeature.ico</file>
+    <file>ico/CheckedFunction.ico</file>
+    <file>ico/CheckedLegacy.ico</file>
+    <file>ico/CheckedModule.ico</file>
+    <file>ico/CrossFeature.ico</file>
+    <file>ico/CrossFunction.ico</file>
+    <file>ico/CrossModule.ico</file>
+    <file>ico/DisabledFeature.ico</file>
+    <file>ico/HealthCheck.ico</file>
+    <file>ico/SampleTest.ico</file>
+    <file>ico/SaveReport.ico</file>
+    <file>ico/WarningFunction.ico</file>
+  </qresource>
+</RCC>

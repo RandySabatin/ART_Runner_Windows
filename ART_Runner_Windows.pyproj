@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{c26b5c82-643b-41a8-a849-244a06f592e9}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>main.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|VisualStudio|PYTHON3.7.9-X32 (Python 3.7 (32-bit))</InterpreterId>
+    <SuppressPackageInstallationPrompt>True</SuppressPackageInstallationPrompt>
+    <Name>ART_Runner_Windows</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+    <Content Include="Tools\image\Checked.jpg" />
+    <Content Include="Tools\image\Crossed.jpg" />
+    <Content Include="Tools\image\loading-small.gif" />
+    <Content Include="UI\convert.bat" />
+    <Content Include="UI\icons.qrc" />
+    <Content Include="UI\ico\Agent.ico" />
+    <Content Include="UI\ico\BestPractice.ico" />
+    <Content Include="UI\ico\Checked.jpg" />
+    <Content Include="UI\ico\CheckedFeature.ico" />
+    <Content Include="UI\ico\CheckedFunction.ico" />
+    <Content Include="UI\ico\CheckedLegacy.ico" />
+    <Content Include="UI\ico\CheckedModule.ico" />
+    <Content Include="UI\ico\Crossed.jpg" />
+    <Content Include="UI\ico\CrossFeature.ico" />
+    <Content Include="UI\ico\CrossFunction.ico" />
+    <Content Include="UI\ico\CrossModule.ico" />
+    <Content Include="UI\ico\DisabledFeature.ico" />
+    <Content Include="UI\ico\HealthCheck.ico" />
+    <Content Include="UI\ico\SampleTest.ico" />
+    <Content Include="UI\ico\SaveReport.ico" />
+    <Content Include="UI\ico\WarningFunction.ico" />
+    <Content Include="main.spec" />
+    <Content Include="UI\input_argument_options.ui" />
+    <Content Include="UI\Perimeter.ui" />
+    <Content Include="UI\qrc2py.bat" />
+    <Content Include="Version.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="basecase.py" />
+    <Compile Include="ExternalScripts\AtomicRedTeam\UserDefined.py" />
+    <Compile Include="lib\ScriptExecutor\InputArgument.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="main.py" />
+    <Compile Include="MainWindow.py" />
+    <Compile Include="UI\icons.py" />
+    <Compile Include="UI\input_argument_options_ui.py" />
+    <Compile Include="UI\perimeter_ui.py" />
+    <Compile Include="Utils\fileUtils.py" />
+    <Compile Include="Utils\processUtils.py" />
+    <Compile Include="Utils\systemUtils.py" />
+    <Compile Include="Utils\tmlog.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ExternalScripts\" />
+    <Folder Include="ExternalScripts\AtomicRedTeam\" />
+    <Folder Include="lib\" />
+    <Folder Include="lib\ScriptExecutor\" />
+    <Folder Include="ScriptsSupportFiles\" />
+    <Folder Include="Tools\" />
+    <Folder Include="Tools\image" />
+    <Folder Include="UI" />
+    <Folder Include="UI\ico" />
+    <Folder Include="Utils" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|VisualStudio|PYTHON3.7.9-X32 (Python 3.7 (32-bit))" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
